@@ -2,13 +2,12 @@
 
 ## Description
 
-this lightweight project is a URL shortener using FastAPI and mongodb.
+A URL shortener using FastAPI and mongodb.
 
 ## Features
 
 - Shorten URL
 - Redirect to original URL
-
 
 ## Installation
 
@@ -26,6 +25,11 @@ MONGO_DETAILS=your_mongo_url
 
 ```bash
 uvicorn main:app --reload
+```
+
+## Future Work
+write basic ui for the project
+write docker-compose file for the project
 ```
 
 
