@@ -17,7 +17,7 @@ def generate_short_url() -> str:
 
 BASE62_CHARS = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-def decimal_to_base62(decimal_num, pad_length=7):
+def decimal_to_base62(decimal_num: int, pad_length: int =7) -> str:
     """
     Convert a decimal number to a base62 string with a fixed length.
     

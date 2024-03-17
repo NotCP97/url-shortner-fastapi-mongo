@@ -14,24 +14,24 @@ class MongoHandler:
         self.db = MongoClient[db_name]
         self.collection = self.db[collection_name]
 
-    def insert(self, data, id=None):
+    def insert(self, data: dict, id=None):
         if id:
             data["_id"] = id
         return self.collection.insert_one(data)
 
-    def find(self, query):
+    def find(self, query: dict):
         return self.collection.find_one(query)
 
-    def update(self, query, data):
+    def update(self, query: dict, data: dict):
         return self.collection.update_one(query, {"$set": data})
 
-    def delete(self, query):
+    def delete(self, query: dict):
         return self.collection.delete_one(query)
     
     def count(self):
         return self.collection.count_documents({})
     
-    def get_real_url(self, short_url):
+    def get_real_url(self, short_url: str):
         result = self.find({"short_url": short_url})
         if result is not None:
             return result.get("real_url")
