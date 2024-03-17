@@ -18,7 +18,7 @@ git clone https://github.com/NotCP97/url-shortner-fastapi-mongo.git
 cd projectname
 pip install -r requirements.txt
 ```
-create a .env file and add the following
+create a .env file and add the following \\
 MONGO_DETAILS=your_mongo_url
 
 ## Running the project
@@ -28,8 +28,7 @@ uvicorn main:app --reload
 ```
 
 ## Future Work
-write basic ui for the project
+write basic ui for the project \\
 write docker-compose file for the project
-```
 
 
