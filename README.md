@@ -2,7 +2,7 @@
 
 ## Description
 
-A URL shortener using FastAPI and mongodb.
+A URL shortener using FastAPI, Streamlit and mongodb.
 
 ## Features
 
@@ -23,12 +23,18 @@ MONGO_DETAILS=your_mongo_url
 
 ## Running the project
 
+Backend server run
 ```bash
 uvicorn main:app --reload
 ```
+Stream lit UI run
+```bash
+streamlit run ui.py
+```
 
 ## Future Work
-write basic ui for the project  
+<s>write basic ui for the project </s>  
+different folder and Dockerfile for backend and UI  
 write docker-compose file for the project
 
 
