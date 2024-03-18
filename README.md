@@ -35,7 +35,7 @@ streamlit run ui.py
 ## Future Work
 <s>write basic ui for the project </s>  
 different folder and Dockerfile for backend and UI  
-Use redis for count to remove count from mongodb collection
+Use redis for count to remove count from mongodb collection  
 write docker-compose file for the project
 
 
