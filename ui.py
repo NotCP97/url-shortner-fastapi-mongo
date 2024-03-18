@@ -12,4 +12,8 @@ if st.button('Shorten'):
         short_url = response.json().get("short_url")
         st.write(f"Shortened URL: {short_url}")
     else:
-        st.write("Some error occurred")
+        try:
+            response_json = response.json().get("detail")[0].get("msg")
+            st.write(f"Some error occurred while shortening the URL: {response_json}")
+        except:
+            st.write("Some error occurred while shortening the URL")
